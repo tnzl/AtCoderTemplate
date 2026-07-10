@@ -17,4 +17,4 @@ other/
 ac-library/
 scripts/*.html
 scripts/virtual_links.txt
-main.cpp
+/main.cpp
