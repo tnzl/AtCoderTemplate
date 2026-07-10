@@ -1,0 +1,16 @@
+{
+  "task": {
+    "program": ["main.cpp"],
+    "submit": "main.cpp",
+    "static": [
+      ["compile.ps1", "compile.ps1"],
+      ["test.ps1", "test.ps1"],
+      ["download.ps1", "download.ps1"],
+      ["submit.ps1", "submit.ps1"]
+    ],
+    "testdir": "test"
+  },
+  "contest": {
+    "static": [["gitignore", ".gitignore"]]
+  }
+}
