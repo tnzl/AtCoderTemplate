@@ -42,5 +42,5 @@ Write-Host @"
 Ready. From $(if ($Dir -eq '.') { 'this directory' } else { $TargetDir }):
   .\compile.ps1
   .\test.ps1
-  .\submit.ps1 $Url
+  # then copy main.cpp and submit on AtCoder in your browser
 "@ -ForegroundColor Cyan

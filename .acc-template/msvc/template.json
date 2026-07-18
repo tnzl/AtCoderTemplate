@@ -5,8 +5,7 @@
     "static": [
       ["compile.ps1", "compile.ps1"],
       ["test.ps1", "test.ps1"],
-      ["download.ps1", "download.ps1"],
-      ["submit.ps1", "submit.ps1"]
+      ["download.ps1", "download.ps1"]
     ],
     "testdir": "test"
   },

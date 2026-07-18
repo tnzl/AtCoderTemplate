@@ -7,7 +7,7 @@ Write-Host "`n[1/3] Installing Python tools..." -ForegroundColor Cyan
 & pip install -r (Join-Path $Root "requirements.txt")
 if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 
-Write-Host "`n[2/4] Patching oj for AtCoder KiB/MiB limits..." -ForegroundColor Cyan
+Write-Host "`n[2/3] Patching oj for AtCoder KiB/MiB limits..." -ForegroundColor Cyan
 & (Join-Path $Root "scripts\patch_oj_atcoder.ps1")
 
 Write-Host "`n[3/4] AC Library (optional)..." -ForegroundColor Cyan
@@ -46,11 +46,6 @@ Next (in Developer PowerShell for VS):
   cd $Root
   .\new.ps1 https://atcoder.jp/contests/abc300/tasks/abc300_a
   .\test.ps1
-  .\submit.ps1 https://atcoder.jp/contests/abc300/tasks/abc300_a
 
-First-time submit login:
-
-```powershell
-.\login.ps1
-```
+Submit manually on https://atcoder.jp/ when tests pass.
 "@ -ForegroundColor Green
